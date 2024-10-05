@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% if page.title %}
+{% set page_title = page.title %}
+{% elif section.title %}
+{% set page_title = section.title %}
+{% else %}
+{% set page_title = "[NO TITLE]" %}
+{% endif %}
+
+{% if page.description %}
+{% set page_description = page.description %}
+{% elif section.description %}
+{% set page_description = section.description %}
+{% else %}
+{% set page_description = "[NO DESCRIPTION]" %}
+{% endif %}
+
+{% if page.extra.root_html_class %}
+{% set root_html_class = page.extra.root_html_class %}
+{% elif section.extra.root_html_class %}
+{% set root_html_class = section.extra.root_html_class %}
+{% else %}
+{% set root_html_class = "main-background-lazy-load" %}
+{% endif %}
+
+<html lang="en" class="{{ root_html_class }}">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{{page_title}} - Crown Finance</title>
+	<meta property="description" content="{{ page_description }}">
+	<meta property="og:title" content="{{ page_title }} - Crown Finance">
+	<meta property="og:description" content="{{ page_description }}">
+	<meta property="og:url" content="{{ current_url }}">
+	<script async src="{{ config.base_url }}/md-bundle/the-website.dist.js"></script>
+	<link rel="stylesheet" href="{{ config.base_url }}/md-bundle/the-website.dist.css">
+</head>
+
+<body>
+	<div class="main-content">
+		{% block content %} {% endblock %}
+	</div>
+</body>
+
+</html>

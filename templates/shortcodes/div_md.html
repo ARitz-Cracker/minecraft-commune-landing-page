@@ -1,0 +1,7 @@
+<div
+	{% if id %}id="{{id}}"{% endif %}
+	{% if class %}class="{{class}}"{% endif %}
+	{% if style %}style="{{style}}"{% endif %}
+>
+{{ body | markdown | safe }}
+</div>

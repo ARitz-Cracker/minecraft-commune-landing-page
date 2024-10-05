@@ -1,0 +1,25 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - "npm --version"
+        - "node --version"
+        # Install the Zola fork
+        - "sudo yum install -y wget"
+        # -gnu is more performant than -musl, but apparently my glibc is too new for AWS.
+        - "wget https://github.com/ARitz-Cracker/zola/releases/download/v0.19.2%2Baritz_cracker.nested_md_shortcodes/zola-x86_64-unknown-linux-musl -O /tmp/zola"
+        - "chmod +x /tmp/zola"
+        - "sudo mv /tmp/zola /usr/local/bin/zola"
+        # Do a clean-install
+        - "npm ci --cache .npm --prefer-offline"
+    build:
+      commands:
+        - "npm run build"
+  artifacts:
+    baseDirectory: public
+    files:
+      - "**/*"
+  cache:
+    paths:
+      - ".npm/**/*"

@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+:root {
+	/* Colors */
+	--background-color: #2B2B2B;
+	--text-color: #F8F8FF;
+	/* Brass */
+	--accent-color-1: #B8860B;
+	/* Copper */
+	--accent-color-2: #DA8A67;
+	/* Bronze for headers */
+	--accent-color-3: #CDAA7D;
+	/* Royal Purple */
+	--fantasy-color-1: #4B0082;
+	/* Dark Teal */
+	--fantasy-color-2: #003F5E;
+	/* Emerald Green */
+	--highlight-color: #50C878;
+	/* Slightly lighter for contrast */
+	--container-bg-color: #2F2F2F;
+	/* Emerald for the border */
+	--border-color: #50C878;
+	/* Royal Purple glow */
+	--border-glow-color: #4B0082;
+
+	/* Fonts */
+	--font-body: 'Spectral', serif;
+	--font-heading: 'Uncial Antiqua', serif;
+	--font-button: 'Josefin Sans', sans-serif;
+
+	--bg-y-percent: 50%;
+
+	background: var(--background-color) url("./backgrounds/ai_slop1.jpg") 50% var(--bg-y-percent) / cover fixed no-repeat;
+	min-height: 100vh;
+}
+
+body {
+	min-height: calc(100vh - 128px);
+	backdrop-filter: blur(4px);
+	color: var(--text-color);
+	font-family: var(--font-body);
+	margin: 0;
+	padding: 0;
+	padding-top: 128px;
+}
+
+.container {
+	background-color: var(--container-bg-color);
+	border: 5px solid var(--border-color);
+	border-radius: 15px;
+	padding: 30px;
+	max-width: 800px;
+	box-shadow: 0 0 15px 2px var(--border-glow-color);
+	font-size: 1.2rem;
+	position: relative;
+	margin: 16px auto;
+}
+
+
+.container::before,
+.container::after {
+	content: '';
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: var(--highlight-color);
+	box-shadow: 0 0 10px 2px var(--border-glow-color);
+	z-index: 1;
+}
+
+.container::before {
+	top: -10px;
+	left: -10px;
+}
+
+.container::after {
+	bottom: -10px;
+	right: -10px;
+}
+
+h1,
+h2,
+h3 {
+	color: var(--accent-color-3);
+	font-family: var(--font-heading);
+	text-shadow: 2px 2px var(--accent-color-2);
+}
+
+a {
+	color: var(--highlight-color);
+}
+
+a:hover {
+	color: var(--fantasy-color-1);
+}
+
+button {
+	background-color: var(--accent-color-1);
+	color: var(--text-color);
+	border: none;
+	padding: 10px 20px;
+	font-family: var(--font-button);
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+button:hover {
+	background-color: var(--accent-color-2);
+}
+
+footer {
+	background-color: var(--fantasy-color-2);
+	color: var(--accent-color-3);
+	text-align: center;
+	padding: 20px;
+}
