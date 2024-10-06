@@ -15,7 +15,7 @@ customHeaders:
           font-src https://fonts.gstatic.com/ https://fonts.googleapis.com/ https://minecraft.gloak.ca/ https://www.gloak.ca/ 'self';
           style-src https://fonts.gstatic.com/ https://fonts.googleapis.com/ https://minecraft.gloak.ca/ https://www.gloak.ca/ 'self' 'unsafe-inline' data:;
           img-src https://minecraft.gloak.ca/ https://www.gloak.ca/ https://raw.githubusercontent.com/ 'self' 'unsafe-inline' data: blob:;
-          script-src https://minecraft.gloak.ca/ https://www.gloak.ca/ 'self' 'unsafe-inline';
+          script-src https://minecraft.gloak.ca/ https://www.gloak.ca/ 'self' 'unsafe-inline' 'unsafe-eval';
           media-src https://minecraft.gloak.ca/ https://www.gloak.ca/ 'self' 'unsafe-inline' data: blob:;"
       - key: cache-control
         value: public, max-age=300, s-maxage=600
