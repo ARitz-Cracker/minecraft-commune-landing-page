@@ -35,26 +35,26 @@ Here are some instructions on set up PolyMC to install the right version of Mine
 
 2. [Install PolyMC](https://polymc.org/download/)
     - When it launches, select the version of Java 17 with the star on it. This should match what you have installed.
-	- ![Example screenshot](tutorial1.png)
+	- ![Example screenshot](/images/tutorial1.png)
 	- If your system has lots of RAM, you can increate the "Maximum memory allocation". 50% to 80% of your system's RAM is usually good.
 	- If it asks you to use the Curseforge API, say "**no**". We aren't using that to update the mods anyway.
-	- ![Example screenshot](tutorial2.png)
+	- ![Example screenshot](/images/tutorial2.png)
 
 3. Link your Minecraft account with PolyMC
     - On the top-right of PolyMC, there's a "Profiles" button. Press that, then press "manage accounts"
-	- ![Example screenshot](tutorial3.png)
+	- ![Example screenshot](/images/tutorial3.png)
 	- Log into your Minecraft account using the "Add Microsoft" button. This also works for XBox-Live.
-	- ![Example screenshot](tutorial4.png)
+	- ![Example screenshot](/images/tutorial4.png)
 	- Your Minecraft account should now be on the list. You can now close it.
 
 4. Have PolyMC Download the mod pack
     - Press "Add Instance" on the top-left
-	- ![Example screenshot](tutorial5.png)
+	- ![Example screenshot](/images/tutorial5.png)
 	- Select "Import from zip"
 	- Use whatever name you wish, e.g. "The Commune"
 	- Paste in the following link: [https://minecraft.gloak.ca/download_mods/mmc_pack.zip](https://minecraft.gloak.ca/download_mods/mmc_pack.zip)
         - If you've already downloaded the zip file, you can press "browse" to have PolyMC open it.
-	- ![Example screenshot](tutorial6.png)
+	- ![Example screenshot](/images/tutorial6.png)
 	- Select "OK" when you're done.
 
 That's it! You may now select the PolyMC instance you've created, then click "launch" to start the game.
