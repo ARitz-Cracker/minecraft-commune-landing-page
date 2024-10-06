@@ -24,8 +24,6 @@ To join the Minecraft Server, there are some prerequisites.
 
 Here are some instructions on set up PolyMC to install the right version of Minecraft and all the mods I'm using.
 
-(TODO: ADD PICTURES!!)
-
 1. Download Java 17. For example, [Microsoft's OpenJDK](https://learn.microsoft.com/en-ca/java/openjdk/download#openjdk-17).
     - Which one to install depends on your system
         - The one ending in "windows-x64.msi" is the best for windows
@@ -53,14 +51,18 @@ Here are some instructions on set up PolyMC to install the right version of Mine
 	- Select "Import from zip"
 	- Use whatever name you wish, e.g. "The Commune"
 	- Paste in the following link: [https://minecraft.gloak.ca/download_mods/mmc_pack.zip](https://minecraft.gloak.ca/download_mods/mmc_pack.zip)
-        - If you've already downloaded the zip file, you can press "browse" to have PolyMC open it.
 	- ![Example screenshot](/images/tutorial6.png)
 	- Select "OK" when you're done.
 
-That's it! You may now select the PolyMC instance you've created, then click "launch" to start the game.
+That's it! You may now select the PolyMC instance you've created, then click "launch" to start the game. The correct version of Minecraft along with the appropriate mods will be downloaded automatically. The game may still take a while to launch after the files are finished downloading.
 
 The mod pack also automatically adds my Minecraft server in the "Multiplayer" section.
 
-Note: Do not update the mods or the game yourself. Your game must be running the same version of the game and mods as the server to run properly. Should we add a new mod, update it, etc. PolyMC will auto-install the matching version next time you launch the game.
+## Other notes
+
+- Do not update the mods or the game yourself. Your game must be running the same version of the game and mods as the server to run properly. Should we add a new mod, update it, etc. PolyMC will auto-install the matching version next time you launch the game.
+- If you ever encounter a "This account has expired" error message, you must repeat section 3 while also deleting the account.
+    - ![Example screenshot](/images/tutorial7.png)
+	- ![Example screenshot](/images/tutorial8.png)
 
 {% end %}
