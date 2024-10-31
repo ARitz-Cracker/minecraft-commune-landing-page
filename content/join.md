@@ -21,11 +21,11 @@ To join the Minecraft Server, there are some prerequisites.
 
 {% div_md(class="container") %}
 
-# Setting up PolyMC
+# Setting up Prism Launcher
 
-Here are some instructions on set up PolyMC to install the right version of Minecraft and all the mods I'm using.
+Here are some instructions on set up Prism Launcher to install the right version of Minecraft and all the mods I'm using.
 
-1. [Install PolyMC](https://polymc.org/download/)
+1. [Prism Launcher](https://prismlauncher.org/download?from=button)
     - Default install options are fine
     - When it launches for the first time, make sure all the "autodetect java" options are checked
 	- If your system has lots of RAM, you can increate the "Maximum memory allocation". 50% to 80% of your system's RAM is usually good.
@@ -54,13 +54,13 @@ Here are some instructions on set up PolyMC to install the right version of Mine
     - After that's done downloading, close the downloader, then do the "Auto-detect".
         - ![Example screenshot](/images/tutorial6-2.png)
 
-That's it! You may now select the PolyMC instance you've created, then click "launch" to start the game. The correct version of Minecraft along with the appropriate mods will be downloaded automatically. The game may still take a while to launch after the files are finished downloading.
+That's it! You may now select the Prism instance you've created, then click "launch" to start the game. The correct version of Minecraft along with the appropriate mods will be downloaded automatically. The game may still take a while to launch after the files are finished downloading.
 
 The mod pack also automatically adds my Minecraft server in the "Multiplayer" section.
 
 ## Other notes
 
-- Do not update the mods or the game yourself. Your game must be running the same version of the game and mods as the server to run properly. Should we add a new mod, update it, etc. PolyMC will auto-install the matching version next time you launch the game.
+- Do not update the mods or the game yourself. Your game must be running the same version of the game and mods as the server to run properly. Should we add a new mod, update it, etc. Prism will auto-install the matching version next time you launch the game.
 - If you ever encounter a "This account has expired" error message, you must repeat section 3 while also deleting the account.
     - ![Example screenshot](/images/tutorial7.png)
 	- ![Example screenshot](/images/tutorial8.png)
